@@ -1,0 +1,91 @@
+//====================================================================================================
+.header {
+   position: absolute;
+   z-index: 99;
+   top: 0;
+   left: 0;
+   width: 100%;
+   &__container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      @media(max-width: $tablet) {
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         align-items: center;
+         padding: rem(15);
+      }
+   }
+
+   &__logo {
+      flex-shrink: 1;
+      display: block;
+      &:not(:last-child) {
+         margin-right: rem(28);
+      }
+      &--menu {
+         display: none;
+         &:not(:last-child) {
+            margin-right: rem(0);
+            margin-bottom: rem(20);
+         }
+         @media(max-width: $tablet) {
+            display: block;
+         }
+      }
+   }
+
+   &__menu {
+      &:not(:last-child) {
+         margin-right: rem(20);
+      }
+   }
+
+   &__phone {
+      position: relative;
+      margin-top: rem(20);
+      margin-bottom: rem(15);
+      display: inline-flex;
+      align-items: center;
+      font-size: rem(26);
+      line-height: 1.23;
+      &::before {
+         content: "";
+         display: block;
+         width: rem(25);
+         height: rem(25);
+         border-radius: 50%;
+         background-image: url('@img/icons/header-phone.svg');
+         background-position: center;
+         background-size: contain;
+         margin-right: rem(6);
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         top: 100%;
+         left: 50%;
+         width: 0;
+         height: 2px;
+         background-color: var(--clr-light);
+         transform: translateX(-50%);
+         transition: width 0.4s ease-in-out;
+      }
+      &:hover {
+         &::after {
+            width: 100%;
+         }
+      }
+      @media(max-width: $tablet) {
+         display: none;
+      }
+      &--mobile {
+         display: none;
+         @media(max-width: $tablet) {
+            display: flex;
+            justify-content: center;
+         }
+      }
+   }
+}

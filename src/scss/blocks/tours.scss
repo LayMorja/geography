@@ -1,0 +1,182 @@
+.tours {
+   position: relative;
+   padding: rem(120) 0;
+   background: linear-gradient(0deg, rgba(0, 47, 85, 0.08), rgba(0, 47, 85, 0.08)), #FFFFFF;
+   &::before,
+   &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: rem(52);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url('@img/tours/vector.svg');
+   }
+   &::before {
+      top: rem(10);
+   }
+   &::after {
+      bottom: rem(10);
+   }
+   &__container {
+      h2 {
+         font-weight: 900;
+         font-size: rem(60);
+         line-height: 0.8;
+         text-align: center;
+         color: var(--clr-grey);
+         &:not(:last-child) {margin-bottom: rem(14);}
+         @media(max-width: $tablet) {
+            font-size: rem(52);
+         }
+         @media(max-width: $mobile) {
+            font-size: rem(46);
+         }
+         @media(max-width: $mobileNormal) {
+            font-size: rem(42);
+         }
+         @media(max-width: $mobileSmall) {
+            font-size: rem(36);
+         }
+         @media(max-width: $mobileSmallMini) {
+            font-size: rem(32);
+         }
+      }
+      p {
+         font-family: var(--ff-bt);
+         font-weight: 300;
+         font-size: rem(27);
+         line-height: 0.9;
+         text-align: center;
+         color: var(--clr-dark);
+         margin-bottom: rem(38);
+         @media(max-width: $tablet) {
+            font-size: rem(24);
+         }
+         @media(max-width: $mobile) {
+            font-size: rem(22);
+         }
+         @media(max-width: $mobileNormal) {
+            font-size: rem(20);
+         }
+         @media(max-width: $mobileSmall) {
+            font-size: rem(18);
+         }
+         @media(max-width: $mobileSmallMini) {
+            font-size: rem(16);
+         }
+      }
+   }
+
+   &__slide {
+      display: flex;
+      justify-content: center;
+   }
+}
+.tour {
+   max-width: rem(324);
+   &__image-box {
+      position: relative;
+   }
+
+   &__date {
+      max-width: max-content;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: rem(10) rem(15);
+      background-color: var(--clr-light);
+      span {
+         font-family: var(--ff-bt);
+         font-weight: 500;
+         font-size: rem(14);
+         line-height: 1;
+         letter-spacing: 0.02em;
+         text-transform: uppercase;
+         color: #002F55;
+         @media(max-width: $mobileSmallMini) {
+            font-size: rem(16);
+         }
+      }
+      &::before {
+         content: "";
+         display: block;
+         flex: 0 0 rem(16);
+         width: rem(16);
+         height: rem(18);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: contain;
+         background-image: url('@img/tours/calendar.svg');
+         margin-right: rem(10);
+      }
+   }
+
+   img {
+      display: block;
+      max-width: 100%;
+      border-radius: 20px;
+      margin: 0 auto;
+   }
+
+   &__price {
+      max-width: max-content;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: rem(9) rem(17);
+      margin-top: rem(-24);
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #002F55;
+      &:not(:last-child) {margin-bottom: rem(10);}
+      span {
+         display: flex;
+         align-items: center;
+         font-weight: 700;
+         line-height: 1.2;
+         text-align: center;
+         &:not(:first-child) {
+            &::before {
+               content: "";
+               display: inline-flex;
+               width: 1px;
+               height: 100%;
+               margin: 0 rem(10);
+               background-color: var(--clr-light);
+            }
+         }
+         @media(max-width: $mobileSmallMini) {
+            font-size: rem(16);
+         }
+      }
+   }
+
+   h3 {
+      font-weight: 900;
+      font-size: rem(30);
+      line-height: 90%;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: var(--clr-red-500);
+      &:not(:last-child) {margin-bottom: rem(8);}
+      @media(max-width: $mobileSmall) {
+         font-size: rem(28);
+      }
+      @media(max-width: $mobileSmallMini) {
+         font-size: rem(24);
+      }
+   }
+
+   p {
+      font-weight: 400;
+      font-size: rem(16);
+      line-height: 1.25;
+      text-align: center;
+      color: var(--clr-dark);
+   }
+}
