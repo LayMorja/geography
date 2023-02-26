@@ -1340,13 +1340,14 @@ h6 {
 .user-content table tr td:first-child {
 	width: 23%;
 	padding-right: 1.8rem;
-	font-family: var(--ff-bt);
-	font-weight: 500;
+	font-family: 'Noto Serif';
+	font-style: normal;
+	font-weight: 400;
 	font-size: 0.9375rem;
-	line-height: 1.6;
-	letter-spacing: 0.03em;
+	line-height: 1.25;
+	letter-spacing: 0.04em;
 	text-transform: uppercase;
-	color: var(--clr-grey-500);
+	color: var(--clr-grey-400);
 }
 .user-content table tr td:last-child {
 	font-weight: 600;
