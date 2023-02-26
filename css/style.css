@@ -1,5 +1,5 @@
 @font-face {
-	font-family: Raleway;
+	font-family: 'Raleway';
 	font-display: swap;
 	src: url('../fonts/Raleway-Regular.woff2') format('woff2'),
 		url('../fonts/Raleway-Regular.woff') format('woff');
@@ -7,7 +7,7 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: Raleway;
+	font-family: 'Raleway';
 	font-display: swap;
 	src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
 		url('../fonts/Raleway-Medium.woff') format('woff');
@@ -15,7 +15,7 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: Raleway;
+	font-family: 'Raleway';
 	font-display: swap;
 	src: url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
 		url('../fonts/Raleway-SemiBold.woff') format('woff');
@@ -23,7 +23,7 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: Raleway;
+	font-family: 'Raleway';
 	font-display: swap;
 	src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
 		url('../fonts/Raleway-Bold.woff') format('woff');
@@ -31,7 +31,7 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: Raleway;
+	font-family: 'Raleway';
 	font-display: swap;
 	src: url('../fonts/Raleway-ExtraBold.woff2') format('woff2'),
 		url('../fonts/Raleway-ExtraBold.woff') format('woff');
@@ -39,7 +39,7 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: Raleway;
+	font-family: 'Raleway';
 	font-display: swap;
 	src: url('../fonts/Raleway-Black.woff2') format('woff2'),
 		url('../fonts/Raleway-Black.woff') format('woff');
@@ -356,9 +356,12 @@ h6 {
 	border: 2px solid #bdbdbd;
 	border-radius: 4px;
 	height: 2.625rem;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 100%;
 	color: var(--clr-dark);
-	font-weight: 500;
-	line-height: 110%;
 }
 
 .select__value {
@@ -368,7 +371,7 @@ h6 {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	height: 2.625rem;
+	height: 2.5rem;
 	padding: 0.625rem 0.9375rem;
 	gap: 0.625rem;
 }
@@ -743,13 +746,14 @@ h6 {
 
 .inner-body__content > h2 {
 	font-weight: 900;
-	font-size: 3.125rem;
+	font-size: 1.75rem;
+	letter-spacing: -0.03em;
 	line-height: 110%;
 	color: var(--clr-blue-500);
 }
 
 .inner-body__content > h2:not(:last-child) {
-	margin-bottom: 2.5rem;
+	margin-bottom: 1.5625rem;
 }
 
 .inner-body__form:not(:last-child) {
@@ -1174,8 +1178,9 @@ h6 {
 .form-callback h3 {
 	font-weight: 900;
 	font-size: 1.3125rem;
-	line-height: 1.23;
-	letter-spacing: 0.01em;
+	line-height: 1.24;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 	color: var(--clr-dark);
 }
 
@@ -1186,13 +1191,14 @@ h6 {
 .form-callback label {
 	cursor: pointer;
 	display: inline-block;
-	font-family: var(--ff-bt);
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 20px;
-	letter-spacing: 0.03em;
+	font-family: 'Noto Serif';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 110%;
+	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	color: var(--clr-grey-500);
+	color: var(--clr-dark);
 }
 
 .form-callback label:not(:last-child) {
@@ -1884,6 +1890,9 @@ h6 {
 
 .tour__image-box {
 	position: relative;
+	overflow: hidden;
+	height: 17.625rem;
+	border-radius: 6px;
 }
 
 .tour__date {
@@ -2027,6 +2036,7 @@ h6 {
 	color: var(--clr-dark);
 	font-weight: 700;
 	line-height: 1.24;
+	border-radius: 6px 6px 6px 0px;
 }
 
 .tour__info span:not(:last-child) {
@@ -2083,10 +2093,7 @@ h6 {
 
 .tour--accommodation p {
 	text-align: left;
-}
-
-.tour--accommodation p:not(:last-child) {
-	margin-bottom: 0.625rem;
+	color: var(--clr-dark);
 }
 
 .contacts {
@@ -2249,7 +2256,7 @@ h6 {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding-bottom: 5rem;
+	padding-bottom: 6.875rem;
 }
 
 .inner-hero h1 {
@@ -3145,10 +3152,6 @@ h6 {
 		transform: rotate(45deg);
 	}
 
-	.inner-body__content > h2 {
-		font-size: 2.625rem;
-	}
-
 	.gallery__slide {
 		min-height: 23.75rem;
 	}
@@ -3296,13 +3299,6 @@ h6 {
 	.header {
 		padding-top: 1.875rem;
 	}
-	.inner-body__content > h2 {
-		font-size: 2.25rem;
-	}
-
-	.inner-body__content > h2:not(:last-child) {
-		margin-bottom: 1.875rem;
-	}
 
 	.gallery__slide {
 		min-height: 20rem;
@@ -3409,7 +3405,7 @@ h6 {
 	}
 
 	.inner-body__content > h2 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	.inner-body__content > h2:not(:last-child) {
