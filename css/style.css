@@ -699,10 +699,11 @@ h6 {
 .breadcrumbs ul li a {
 	position: relative;
 	z-index: 2;
-	font-family: var(--ff-bt);
+	font-family: 'Noto Serif';
+	font-style: italic;
 	font-weight: 400;
 	font-size: 0.875rem;
-	line-height: 1.42;
+	line-height: 110%;
 	text-align: center;
 }
 
@@ -868,7 +869,7 @@ h6 {
 
 .section-card h3 {
 	font-weight: 900;
-	font-size: 3.125rem;
+	font-size: 2.375rem;
 	line-height: 90%;
 	text-align: center;
 	letter-spacing: -0.02em;
@@ -876,14 +877,15 @@ h6 {
 }
 
 .section-card h3:not(:last-child) {
-	margin-bottom: 0.5625rem;
+	margin-bottom: 1.875rem;
 }
 
 .section-card span {
-	font-family: var(--ff-bt);
+	font-family: 'Noto Serif';
+	font-style: italic;
 	font-weight: 400;
-	font-size: 1rem;
-	line-height: 1.25;
+	font-size: 1.125rem;
+	line-height: 110%;
 	text-align: center;
 	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
@@ -2249,7 +2251,7 @@ h6 {
 
 .inner-hero h1 {
 	font-weight: 900;
-	font-size: 5rem;
+	font-size: 4.0625rem;
 	line-height: 90%;
 	text-align: center;
 }
@@ -2277,9 +2279,10 @@ h6 {
 
 .user-content.user-content__about h2 {
 	font-weight: 900;
-	font-size: 3.125rem;
+	font-size: 1.75rem;
 	line-height: 110%;
-	color: var(--clr-blue-500);
+	letter-spacing: -0.03em;
+	color: #333333;
 }
 .user-content.user-content__about h2:not(:first-of-type) {
 	padding-top: 0;
@@ -2383,8 +2386,9 @@ h6 {
 }
 
 .about-benefits li span {
-	font-family: 'Montserrat Alternates';
-	font-weight: 600;
+	font-family: 'Raleway';
+	font-style: normal !important;
+	font-weight: 700;
 	font-size: 4.375rem;
 	line-height: 90%;
 	text-align: center;
@@ -2399,9 +2403,10 @@ h6 {
 .about-benefits li p {
 	max-width: 13.125rem;
 	margin: 0 auto;
-	font-family: 'Montserrat Alternates';
-	font-weight: 600;
-	font-size: 1.1875rem;
+	font-family: 'Raleway';
+	font-style: normal !important;
+	font-weight: 700;
+	font-size: 1.3125rem;
 	line-height: 100%;
 	text-align: center;
 	letter-spacing: -0.02em;
@@ -2464,11 +2469,14 @@ h6 {
 }
 
 .about-whom div p {
-	font-family: 'Montserrat Alternates';
-	font-weight: 600;
-	font-size: 1.375rem;
-	line-height: 95%;
-	letter-spacing: -0.02em;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 1.3125rem;
+	line-height: 1.24;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 	color: var(--clr-light);
 }
 
@@ -2556,9 +2564,12 @@ h6 {
 
 .user-content p,
 .user-content ul li {
-	font-family: var(--ff-bt);
-	line-height: 125%;
-	color: var(--clr-grey-500);
+	font-family: 'Noto Serif';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 130%;
+	color: #000000;
 }
 
 .user-content ul {
@@ -2606,7 +2617,7 @@ h6 {
 .user-content h2,
 .user-content h3 {
 	font-weight: 900;
-	font-size: 2.1875rem;
+	font-size: 1.4375rem;
 	line-height: 110%;
 	color: var(--clr-grey-400);
 	margin-bottom: 1.25rem;
@@ -2935,7 +2946,8 @@ h6 {
 		bottom: -0.1875rem;
 	}
 
-	.hero__item h1 {
+	.hero__item h1,
+	.inner-hero h1 {
 		font-size: 3.5rem;
 	}
 
@@ -2950,10 +2962,6 @@ h6 {
 	.about__item p {
 		font-size: 1.0625rem;
 		padding: 1.25rem 2.1875rem;
-	}
-
-	.inner-hero h1 {
-		font-size: 4.5rem;
 	}
 
 	.inner-hero::after {
@@ -3139,7 +3147,8 @@ h6 {
 		min-height: 23.75rem;
 	}
 
-	.hero__item h1 {
+	.hero__item h1,
+	.inner-hero h1 {
 		font-size: 3.25rem;
 	}
 
@@ -3160,15 +3169,6 @@ h6 {
 	.tours__container > p {
 		font-size: 1.375rem;
 	}
-
-	.inner-hero h1 {
-		font-size: 4rem;
-	}
-
-	.user-content.user-content__about h2 {
-		font-size: 2.625rem;
-	}
-
 	.about-list h2 {
 		font-size: 2.625rem;
 	}
@@ -3212,11 +3212,6 @@ h6 {
 
 	.team ul li span:not(:last-child) {
 		margin-bottom: 0.625rem;
-	}
-
-	.user-content h2,
-	.user-content h3 {
-		font-size: 2rem;
 	}
 
 	.header__container {
@@ -3307,7 +3302,8 @@ h6 {
 		min-height: 20rem;
 	}
 
-	.hero__item h1 {
+	.hero__item h1,
+	.inner-hero h1 {
 		font-size: 3.25rem;
 	}
 
@@ -3342,14 +3338,6 @@ h6 {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
-	}
-
-	.inner-hero h1 {
-		font-size: 3.5rem;
-	}
-
-	.user-content.user-content__about h2 {
-		font-size: 2.25rem;
 	}
 
 	.about-list h2 {
@@ -3396,7 +3384,7 @@ h6 {
 
 	.user-content h2,
 	.user-content h3 {
-		font-size: 1.75rem;
+		font-size: 1.375rem;
 	}
 
 	.footer__row:first-child ul:last-child {
@@ -3451,7 +3439,8 @@ h6 {
 		border-radius: 0.625rem;
 	}
 
-	.hero__item h1 {
+	.hero__item h1,
+	.inner-hero h1 {
 		font-size: 3rem;
 	}
 
@@ -3479,12 +3468,8 @@ h6 {
 		font-size: 1.875rem;
 	}
 
-	.inner-hero h1 {
-		font-size: 3rem;
-	}
-
 	.user-content.user-content__about h2 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	.about-description p {
@@ -3596,7 +3581,8 @@ h6 {
 		right: 1.5625rem;
 	}
 
-	.hero__item h1 {
+	.hero__item h1,
+	.inner-hero h1 {
 		font-size: 2.5rem;
 	}
 
@@ -3668,10 +3654,6 @@ h6 {
 		font-size: 0.875rem;
 	}
 
-	.inner-hero h1 {
-		font-size: 2.5rem;
-	}
-
 	.team ul li h2 {
 		font-size: 1.5rem;
 	}
@@ -3692,8 +3674,9 @@ h6 {
 		font-size: 0.9375rem;
 	}
 
-	.user-content p {
-		font-size: 1rem;
+	.user-content p,
+	.user-content ul li {
+		font-size: 0.9375rem;
 	}
 
 	.user-content p:not(:last-child) {
@@ -3702,7 +3685,7 @@ h6 {
 
 	.user-content h2,
 	.user-content h3 {
-		font-size: 1.5rem;
+		font-size: 1.3125rem;
 	}
 
 	.footer__row:first-child ul:first-child li {
@@ -3740,7 +3723,8 @@ h6 {
 		right: 0.9375rem;
 	}
 
-	.hero__item h1 {
+	.hero__item h1,
+	.inner-hero h1 {
 		font-size: 2rem;
 	}
 
@@ -3770,10 +3754,6 @@ h6 {
 
 	.contacts__form input {
 		font-size: 0.875rem;
-	}
-
-	.inner-hero h1 {
-		font-size: 2rem;
 	}
 }
 
