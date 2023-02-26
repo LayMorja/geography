@@ -806,13 +806,14 @@ h6 {
 }
 
 .sections-menu div {
-	font-family: var(--ff-bt);
+	font-family: 'Noto Serif';
+	font-style: normal;
 	font-weight: 500;
 	font-size: 0.875rem;
-	line-height: 1.42;
+	line-height: 120%;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-	color: var(--clr-grey);
+	color: var(--clr-dark);
 }
 
 .sections-menu div:not(:last-child) {
@@ -1035,9 +1036,10 @@ h6 {
 	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 0.3125rem 0.875rem;
+	font-style: normal;
 	font-weight: 600;
-	font-size: 0.75rem;
-	line-height: 1.66;
+	font-size: 0.9375rem;
+	line-height: 140%;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
