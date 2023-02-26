@@ -926,15 +926,16 @@ h6 {
 }
 
 .pagination__count span:first-child {
-	font-family: var(--ff-bt);
-	font-size: 0.875rem;
-	line-height: 1.42;
+	font-family: 'Noto Serif';
+	font-style: italic;
+	line-height: 110%;
 	color: var(--clr-grey);
 	margin-right: 1.1875rem;
 }
 
 .pagination__count span:last-child {
 	font-weight: 500;
+	font-size: 1.0625rem;
 	line-height: 1.23;
 	color: var(--clr-dark);
 }
@@ -2534,32 +2535,35 @@ h6 {
 
 .team ul li h2 {
 	font-weight: 900;
-	font-size: 2.1875rem;
-	line-height: 110%;
+	font-size: 2rem;
+	line-height: 100%;
 	color: var(--clr-red-500);
 }
 
 .team ul li h2:not(:last-child) {
-	margin-bottom: 0.9375rem;
+	margin-bottom: 0.625rem;
 }
 
 .team ul li span {
-	font-family: var(--ff-rl);
-	font-size: 1.375rem;
-	line-height: 1.18;
-	letter-spacing: 0.02em;
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 1.44;
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--clr-dark);
 }
 
 .team ul li span:not(:last-child) {
-	margin-bottom: 0.9375rem;
+	margin-bottom: 0.625rem;
 }
 
 .team ul li p {
-	font-family: var(--ff-bt);
-	line-height: 125%;
-	color: var(--clr-grey-500);
+	font-family: 'Noto Serif';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 130%;
+	color: #000000;
 }
 
 .user-content p,
